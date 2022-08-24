@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singup {
+    max-width: 330px;
+    width: 100%;
+    height: 490px;
+    background-color: #fff;
+    padding: 50px 40px;
+}
+
+.signup-heading {
+    
+}

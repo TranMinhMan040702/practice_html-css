@@ -1,0 +1,57 @@
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singup {
+    max-width: 330px;
+    width: 100%;
+    height: 490px;
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #363a3f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-button {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    background-color: #4c6ef4;
+    display: inline-block;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(76, 110, 244, 0.5);
+    cursor: pointer;
+    position: relative;
+}
+
+.signup-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.signup-text {
+
+}
