@@ -1,0 +1,163 @@
+@charset "ISO-8859-1";
+:root {
+    --primary-color: #4daf54;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--primary-color), #3d8880);
+    /* Đèn lên nhau không */
+    overflow: hidden; 
+    padding-top: 30px;
+}
+.card {
+    width: 300px;
+    height: 400px;
+    background-color: #272d40;
+    border-radius: 15px;
+    margin: 120px auto;
+    padding: 40px 20px;
+    color: white;
+    position: relative;
+}
+
+.like, .cart {
+    font-size: 25px;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cart {
+    left: unset;
+    right: 20px;
+}
+
+.card_img {
+    width: 90%;
+    transition: 0.5s;
+}
+
+.card:hover .card_img {
+    transform: translateY(-90px) rotate(-20deg);
+}
+
+.card_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_title {
+    color: var(--primary-color);
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card_price {
+    font-weight: 600;
+    font-size: 26px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.card:hover .card_title,
+.card:hover .card_price {
+    transform: translate(-40px, -72px);
+}
+
+.card_size {
+    margin-top: 100px;
+}
+
+.card_size,
+.card_color,
+.card_action {
+    opacity: 0; 
+    visibility: hidden; 
+    transition: 0.5s;
+}
+
+.card:hover .card_size, 
+.card:hover .card_color,
+.card:hover .card_action {
+    transition-delay: 0.2s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card_size,
+.card_color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card:hover .card_size {
+    margin-top: -30px;
+}
+
+.card_size h3,
+.card_color h3 {
+    font-weight: unset;
+    margin-right: 12px;
+}
+
+.card_size span {
+    padding: 2px 10px;
+    background-color: #dadada;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: #272d40;
+    cursor: pointer;
+}
+
+.card_size-btn:hover {
+    background-color: #eeee;
+}
+
+.card_color span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.card_color span.green {
+    background-color: green;
+}
+
+.card_color span.red {
+    background-color: red;
+}
+
+.card_color span.black {
+    background-color: black;
+}
+
+.card_action button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    color: white;
+    margin-right: 7px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.card_action button:hover {
+    transform: scale(0.9);
+}
